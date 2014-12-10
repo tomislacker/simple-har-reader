@@ -97,7 +97,7 @@ if __name__ == '__main__':
     # Validate the target_operation variable
     ###
     if not target_operation:
-        raise Exception('No target_operation specified')
+        target_operation = 'get_input_output_bytes_from_files'
 
     try:
         if not locals()[target_operation]:
